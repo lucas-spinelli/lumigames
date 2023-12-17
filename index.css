@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #000000, #333333); /* Fondo degradado negro */
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #555; /* Añadir un color de fondo a las celdas */
+    color: #fff; /* Cambiar el color del texto en las celdas */
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff; /* Cambiar el color del texto del estado */
+}
+
+.reset-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Cambiar el color de fondo del botón */
+    color: #fff; /* Cambiar el color del texto del botón */
+    border: none;
+}
